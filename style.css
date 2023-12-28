@@ -65,14 +65,32 @@ body {
 
 .sheet-actions-container {
     height: 3rem;
-    background-color: brown;
+    background-color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    gap: 1rem;
+}
+
+.sheet-actions-container > * {
+    display: inline-block;
+}
+
+.sheet-actions-container .sheet-add-icon {
+    width: 2vw;
+}
+
+.sheet-actions-container .sheets-folder-container {
+    height: 80%;
+    background-color: bisque;
+    width: calc(100vw - 2vw);
 
     display: flex;
     align-items: center;
 }
 
 .sheet-actions-container .sheets-folder-container {
-    height: 1rem;
-    background-color: lightseagreen;
-    display: inline-block;
+    text-decoration: underline;
 }
