@@ -27,6 +27,9 @@ for (let i = 0; i < rows; i++) {
     let cell = document.createElement('div');
     cell.setAttribute('class', 'cell');
     cell.setAttribute('contenteditable', 'true');
+    cell.setAttribute('spellcheck', false);
+    cell.setAttribute('rid', i);
+    cell.setAttribute('cid', j);
     addListenerForAddressBar(cell, i, j);
     rowContainer.appendChild(cell);
   }
