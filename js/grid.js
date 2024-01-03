@@ -43,3 +43,7 @@ function addListenerForAddressBar(cell, i, j) {
     addressBar.value = `${colId}${rowId}`;
   });
 }
+
+//active first cell on page load
+let firstCell = document.querySelector('.cell');
+firstCell.click();
